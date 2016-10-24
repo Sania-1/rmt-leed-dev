@@ -1,0 +1,59 @@
+server {
+	listen	80;
+	
+	server_name	{APP_DOMAIN_NAME};
+	root {APP_FOLDER_PATH};
+	index index.php index.html index.htm;
+	
+	location / {
+                try_files $uri $uri/ /index.php?q=$uri&$args;
+                port_in_redirect off;
+
+                proxy_connect_timeout 60s;
+                proxy_send_timeout   1800s;
+                proxy_read_timeout   1800s;
+        }
+	
+    
+	location ~ \.php$ {
+		client_max_body_size 950M;
+		client_body_buffer_size 1000k;
+		
+		sendfile on;
+		send_timeout 400s;
+		
+		proxy_connect_timeout 60s;
+		proxy_send_timeout   400s;
+		proxy_read_timeout   400s;
+		
+		fastcgi_read_timeout 400s;
+		fastcgi_send_timeout 180s;
+		
+		fastcgi_pass {FCGI_PATH};
+		fastcgi_index  index.php;
+		include /etc/nginx/fastcgi_params;
+		
+		fastcgi_param  PHP_VALUE "display_errors = {APP_ERRORS}
+		display_startup_errors = {APP_ERRORS}
+		html_errors = {APP_ERRORS}
+		error_log = {APP_FOLDER_PATH}/data/logs/php_errors.txt
+		expose_php = Off
+		max_execution_time = 360
+		max_input_time = 60
+		memory_limit = 1000M
+		log_errors = On
+		file_uploads = On
+		upload_max_filesize = 900M
+		max_file_uploads = 10
+		default_socket_timeout = 360
+		post_max_size = 950M
+		session.gc_probability = 1
+		session.gc_divisor = 1000
+		session.gc_maxlifetime = 1440";
+		
+		fastcgi_param  SCRIPT_FILENAME  {APP_FOLDER_PATH}/index.php;
+		fastcgi_param  PROJECT_RELATIVE_PATH /;
+	}
+	
+}
+# END OF FILE
