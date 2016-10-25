@@ -1,0 +1,22 @@
+{
+  "name": "rmt-leed-dev",
+  "version": "1.0.0",
+  "description": "RMT-LEED-DEV is review management tool of leed ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deependerch/rmt-leed-dev.git"
+  },
+  "author": "Deepender Choudhary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deependerch/rmt-leed-dev/issues"
+  },
+  "homepage": "https://github.com/deependerch/rmt-leed-dev#readme",
+  "dependencies": {
+    "wiredep": "^4.0.0"
+  }
+}

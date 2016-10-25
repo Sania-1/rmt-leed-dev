@@ -1,0 +1,28 @@
+{
+  "name": "rmt-leed-dev",
+  "description": "RMT-LEED-DEV is review management tool of leed",
+  "main": "index.html",
+  "authors": [
+    "Deepender Choudhary"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "rmt",
+    "leed"
+  ],
+  "homepage": "https://github.com/deependerch/rmt-leed-dev",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
