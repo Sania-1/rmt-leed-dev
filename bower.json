@@ -1,7 +1,7 @@
 {
   "name": "rmt-leed-dev",
   "description": "RMT-LEED-DEV is review management tool of leed",
-  "main": "index.html",
+  "main": "rmt-leed-app/index.html",
   "authors": [
     "Deepender Choudhary"
   ],
