@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/deependerch/rmt-leed-dev#readme",
   "dependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-injector": "^1.1.0"
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-inject": "^4.1.0",
+    "stream-series": "^0.1.1"
   }
 }
