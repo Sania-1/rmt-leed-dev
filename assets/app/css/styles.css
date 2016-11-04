@@ -8975,11 +8975,13 @@ nav.links a {
   margin-top: 0;
   position: relative;
 }
+/*
 @media (max-width: 991px) {
   .main-login {
     margin-top: 65px;
   }
 }
+*/
 .main-login .logo {
   padding: 0 10px;
 }
