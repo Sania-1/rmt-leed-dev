@@ -1,9 +1,25 @@
 ![alt tag](https://github.com/deependerch/rmt-leed-dev/blob/master/assets/images/leedlogo.png)
-# RMT-LEED-DEV
+# RMT-LEED-DEV Documentation
   * RMT is review management tool of leed, This project is front end design of LEED RMT DESK.
 
 * Front-end prototype design
 
+# Live Demo Test Link:
+
+ * [ http://rmt-leed-dev.16mb.com ] (http://rmt-leed-dev.16mb.com)
+
+# Following are the vendors used in Design:
+ 
+  * [ animate.css ] (https://daneden.github.io/animate.css/)
+  * [ Bootstrap Framework v3.3.7 ] (http://getbootstrap.com/)
+  * [ Bootstrap-Selector ] (https://silviomoreto.github.io/bootstrap-select/)
+  * [ themify-icons ] (https://themify.me/themify-icons)
+  * [ Font-Awesome ] (http://fontawesome.io/)
+  * [ jquery ] (https://jquery.com/)
+  * [ jquery-validation ] (https://jqueryvalidation.org/)
+  * [ perfect-scrollbar ] (https://noraesae.github.io/perfect-scrollbar/)
+  * [ switchery ] (http://abpetkov.github.io/switchery/)
+  
 # Description about Assets Automation:
 
   * Assets Automation management is done using Gulp.js with Bower
