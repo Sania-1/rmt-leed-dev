@@ -21,6 +21,11 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "modernizer": "^2.8.2",
+    "themify-icons": "^0.1.2",
+    "switchery": "^0.8.1",
+    "animate.css": "^3.5.2",
+    "bootstrap-select": "^1.11.2"
   }
 }

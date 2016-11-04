@@ -1,19 +1,21 @@
 # RMT-LEED-DEV
-  * RMT is review management tool of leed this project is front end design of rmt.
+  * RMT is review management tool of leed, This project is front end design of LEED RMT DESK.
 
 * Front-end prototype design
 
 # Description about Assets Automation:
 
   * Assets Automation management is done using Gulp.js with Bower
-  * Gulp is Great 
-  * Bower is cool
+  * [ Get Gulp here..! ] (http://gulpjs.com/)
+  * [ Get Bower here..! ] (https://bower.io/)
   
-  * Together makes Assets Automation very cool
+  * Together both makes Assets Automation very cool
   
-# For Assets Automation Management on Local Development Follow Instruction 
+# For Assets Automation Management on Local Development
 
- * Make sure node.js is Intalled in your System beacuse we required npm i.e Node Package Manager.
+* Setup intruction (required once) :- 
+
+ * Make sure node.js is Intalled in your System because we required npm i.e Node Package Manager.
  * npm is installed with Node.js ,
      [ get-npm here..! ] (https://www.npmjs.com/get-npm)
 
@@ -26,9 +28,12 @@
    bower install
 ```
 ```
-   gulp
+   gulp copy
+```
+```
+   gulp assets-inject
 ```
 
- * Run above command one by one , and every assets will be installed on locally
+ * Run above command one by one , and every assets will be installed locally and injected in new HTML files
  
  * Note: These above steps only required for project Assets Automation of CSS and JS files..! 

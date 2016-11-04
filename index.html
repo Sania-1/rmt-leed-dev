@@ -1,26 +1,100 @@
 <!DOCTYPE html>
+<!--RMT Leed Desk -->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
 
 <head>
-    <meta charset="UTF-8">
-    <title>RMT LEED ONLINE</title>
-        <!-- inject:css -->
-        <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="/assets/vendors/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="/assets/app/css/style.css">
-        <!-- endinject -->
-
+    <title>Login | RMT LEED DESK</title>
+    <!-- start: META -->
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="Leed Desk" name="description" />
+    <!-- end: META -->
+    <!-- start: GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <!-- end: GOOGLE FONTS -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/vendors/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/vendors/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="/assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/assets/vendors/switchery/switchery.min.css">
+    <link rel="stylesheet" href="/assets/app/css/color.css">
+    <link rel="stylesheet" href="/assets/app/css/plugins.css">
+    <link rel="stylesheet" href="/assets/app/css/styles.css">
+    <!-- endinject -->
 </head>
+<!-- end: HEAD -->
 
-<body> 
-
-
-
-     <!-- inject:js -->
-     <script src="/assets/vendors/jquery/jquery.js"></script>
-     <script src="/assets/vendors/bootstrap/js/bootstrap.js"></script>
-     <script src="/assets/app/js/rmt-app.js"></script>
-     <!-- endinject -->
+<body class="login">
+    <!-- start: LOGIN -->
+    <div class="row">
+        <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="logo margin-top-30">
+                <h1><img src="assets/images/leedlogo.png" alt="LEED Review Management"/>
+					<strong>RMT LEED DESK</strong></h1> </div>
+            <!-- start: LOGIN BOX -->
+            <div class="box-login">
+                <form class="form-login" action="searchfilter.html" method="get">
+                    <fieldset>
+                        <legend> Sign in to your account </legend>
+                        <p> Please enter your name and password to log in. </p>
+                        <div class="form-group"> <span class="input-icon">
+									<input type="text" class="form-control" name="username" value="" placeholder="Username">
+									<i class="fa fa-user"></i> </span> </div>
+                        <div class="form-group form-actions"> <span class="input-icon">
+									<input type="password" class="form-control password" name="password" value="" placeholder="Password">
+									<i class="fa fa-lock"></i>
+									 </span> </div>
+                        <div class="form-actions">
+                            <div class="checkbox clip-check check-primary">
+                                <input type="checkbox" id="remember" value="1">
+                                <label for="remember"> Keep me signed in </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary pull-right"> Login <i class="fa fa-arrow-circle-right"></i> </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- start: COPYRIGHT -->
+                <div class="copyright"><a href="#"> Terms and Conditions </a> | <a href="#"> Privacy </a> | <a href="#"> Change your password </a></div>
+                <div class="copyright"> &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> RMT LEED DESK</span>. <span> All rights reserved</span> </div>
+                <!-- end: COPYRIGHT -->
+            </div>
+            <!-- end: LOGIN BOX -->
+        </div>
+    </div>
+    <!-- end: LOGIN -->
+    <!-- inject:js -->
+    <script src="/assets/vendors/jquery/jquery.js"></script>
+    <script src="/assets/vendors/bootstrap/js/bootstrap.js"></script>
+    <script src="/assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/vendors/perfect-scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/assets/vendors/switchery/switchery.min.js"></script>
+    <script src="/assets/app/js/login.js"></script>
+    <script src="/assets/app/js/main.js"></script>
+    <script src="/assets/app/js/rmt-app.js"></script>
+    <!-- endinject -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="assets/vendors/jquery-validation/jquery.validate.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: JavaScript Event Handlers for this page -->
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Login.init();
+        });
+    </script>
+    <!-- end: JavaScript Event Handlers for this page -->
 </body>
 
 </html>
