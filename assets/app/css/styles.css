@@ -374,7 +374,7 @@ h5.over-title {
   margin-top: -6px;
 }
 .navbar .navbar-header .menu-toggler {
-  margin-right: 60px;
+  margin-right: 10px;
   padding: 0 15px;
   font-size: 17px;
   color: #c8c7cc;
@@ -616,13 +616,13 @@ h5.over-title {
 @media (min-width: 992px) {
   .navbar .navbar-right {
     position: relative;
-    margin: 1px 15px 0 0;
+    margin: 1px 0 0 0;
   }
 }
 @media (max-width: 991px) and (min-width: 767px) {
   .navbar .navbar-right {
     position: relative;
-    margin: 1px 35px 0 0;
+    margin: 1px 0 0 0;
   }
 }
 @media (min-width: 768px) {
