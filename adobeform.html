@@ -353,7 +353,7 @@
                                         <span class="panel-title text-large"><span class="glyphicon glyphicon-saved"></span>&nbsp;PI FORM 1: MINIMUM PROGRAM REQUIREMENTS: 1000019770</span>
                                         
                                         <span class="float-right">
-                                           <a href="#" class="text-white text-large" data-toggle="modal" data-target=".bs-example-modal-right"><i class="ti-layers"></i> OPTIONS</a>
+                                           <a href="#" class="text-white text-large" data-toggle="modal" data-target="#options"><i class="ti-layers"></i> OPTIONS</a>
                                         </span>
                                         
                                           </div>
@@ -361,7 +361,7 @@
                                         <iframe width="100%" height="700px" frameborder="0" src="https://docs.google.com/gview?url=http://rmt-leed-dev.16mb.com/p1.pdf&embedded=true" name="formview" id="formview"> </iframe>
                                     </div>
                                     <div class="panel-footer">
-                                        <h3><a  class="text-white" href="#">Threshold</a> | <a  class="text-white" href="#">Comments</a>
+                                        <h3><a  class="text-white" href="#" data-toggle="modal" data-target="#threshold">Threshold</a> | <a  class="text-white" href="#">Comments</a>
                                      <span class="float-right"><a href="#" class="text-white">Save <i class="ti-save"></i></a></span>
                                   </h3> </div>
                                 </div>
@@ -369,8 +369,42 @@
                         </div>
                     </div>
                     <!-- end: PDF DISPLAY -->
+                    <!-- STARTModal: threshold-->
+                    <div class="modal fade" id="threshold" tabindex="-1" role="dialog" aria-labelledby="threshold" aria-hidden="true">
+				        <div class="modal-dialog modal-sm">
+				           <div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Threshold</h4>
+								</div>
+								<div class="modal-body">
+								 <div class="form-horizontal">
+                                    <label for="text-dark text-large">PIf1 - Required [0 pts]</label>
+                                     <select class="form-control selectpicker show-menu-arrow" name="reg_type" id="reg_type">
+                                           <option>.......</option>
+                                           <option>Approved</option>
+                                           <option>Not Approved</option>
+                                      </select>
+                                    </div>		
+								</div>
+				            	<div class="modal-footer">
+									<button type="button" class="btn btn-primary btn-o" data-dismiss="modal">
+								    	Close
+									</button>
+									<button type="button" class="btn btn-primary">
+										Save changes
+									</button>
+								</div>
+				             </div>
+				           </div>
+						</div>
+
+                    <!-- ENDModal: threshold-->
+                       
                     <!--start: RIGHT SIDE MODAL OPTION-->
-                    <div class="modal fade modal-aside horizontal right bs-example-modal-right" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade modal-aside horizontal right" tabindex="-1" role="dialog" aria-labelledby="options" id="options" aria-hidden="true">
                         <div class="modal-dialog modal-dialog modal-sm">
                             <div class="modal-content">
                                 <div class="modal-header">
