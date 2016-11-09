@@ -3679,6 +3679,16 @@ a.text-light:hover {
   clear: both;
 }
 
+/*
+Hover Changes
+*/
+a div div p span i {
+visibility: hidden;
+}
+        
+a:hover div div p span i {
+visibility: visible;
+}
 /* ---------------------------------------------------------------------- */
 /*  Backdrop
 /* ---------------------------------------------------------------------- */
@@ -9628,3 +9638,4 @@ td.small-width {
   position: relative;
   width: 260px;
 }
+
