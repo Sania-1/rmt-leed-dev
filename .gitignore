@@ -4,3 +4,4 @@ theme/
 bower_components/*
 node_modules/*
 theme/*
+/nbproject/private/
